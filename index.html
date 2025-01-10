@@ -11,13 +11,14 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1e1e2f;
-            color: #ffffff;
+            background: linear-gradient(to bottom, #4a4a4a, #6e7e8b, #97aab5, #eae6d8);
+            color: #222831;
+            overflow-x: hidden;
         }
 
         header {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            color: #f9f7f7;
             text-align: center;
             padding: 2rem 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -31,10 +32,11 @@
         header p {
             margin: 0.5rem 0;
             font-size: 1.1rem;
+            color: #bbe1fa;
         }
 
         header a {
-            color: #f4f4f4;
+            color: #bbe1fa;
             text-decoration: none;
             margin: 0 0.5rem;
         }
@@ -47,9 +49,10 @@
             max-width: 1100px;
             margin: 2rem auto;
             padding: 2rem;
-            background-color: #27293d;
+            background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            color: #222831;
         }
 
         section {
@@ -58,10 +61,10 @@
 
         h2 {
             font-size: 1.8rem;
-            border-bottom: 2px solid #6a11cb;
+            border-bottom: 2px solid #6e7e8b;
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
-            color: #6a11cb;
+            color: #4a4a4a;
         }
 
         ul {
@@ -73,10 +76,11 @@
             margin-bottom: 1.2rem;
             font-size: 1.1rem;
             line-height: 1.6;
+            position: relative;
         }
 
         ul li a {
-            color: #6a11cb;
+            color: #4a4a4a;
             text-decoration: none;
         }
 
@@ -89,8 +93,8 @@
         }
 
         .skills-category h3 {
-            font-size: 0.9rem;
-            color: #f4f4f4;
+            font-size: 1.4rem;
+            color: #4a4a4a;
             margin-bottom: 0.8rem;
         }
 
@@ -101,29 +105,43 @@
         }
 
         .skills-category .skills span {
-            background-color: #6a11cb;
-            color: white;
+            background-color: #6e7e8b;
+            color: #f9f7f7;
             padding: 0.5rem 1rem;
             margin: 0.3rem 0;
             border-radius: 20px;
             font-size: 0.9rem;
+            transition: transform 0.3s, background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .skills-category .skills span:hover {
+            background-color: #97aab5;
+            transform: scale(1.1);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #1a1a2e;
-            color: #9b9b9b;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #f9f7f7;
             margin-top: 2rem;
         }
 
         footer a {
-            color: #6a11cb;
+            color: #bbe1fa;
             text-decoration: none;
         }
 
         footer a:hover {
             text-decoration: underline;
+        }
+
+        footer div {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
         }
     </style>
 </head>
@@ -139,9 +157,15 @@
         <section>
             <h2>Education</h2>
             <p><strong>Master of Science in Information Systems</strong> (GPA: 4.0/4.0)<br>
-                Santa Clara University, California, USA | January 2024 - December 2025</p>
+                Santa Clara University, California, USA | January 2024 - December 2025<br>
+                <strong>Relevant Coursework:</strong> Object-Oriented Analysis and Programming(Java)(Teaching Assistant), Data Analytics with Python, Database Management Systems, Software
+                Project Management, Applied Cloud Computing(Teaching Assistant), Machine Leaning, Deep learning.
+            </p>
             <p><strong>Bachelor of Engineering, Computer Science and Engineering</strong> (GPA: 3.97/4.0)<br>
-                Gujarat Technological University, Ahmedabad, India | May 2018 - June 2022</p>
+                Gujarat Technological University, Ahmedabad, India | May 2018 - June 2022<br>
+                <strong>Relevant Coursework:</strong> Data Structures and Algorithms, Software Engineering, Web Programming, Design and Analysis of Algorithms, Object
+                Oriented Programming, Machine Learning.
+            </p>
         </section>
         <section>
             <h2>Technical Skills</h2>
@@ -197,17 +221,19 @@
             <ul>
                 <li><strong>Software Engineer</strong> | True Sparrow (Formerly PLGWorks) | Pune, India | September 2022
                     - November 2023<br>
-                    - Played a pivotal role in the front-end development of <a href="https://maticrobots.com"
-                        target="_blank">maticianrobot.com</a>, resulting in a 30% increase in website traffic and a 20%
+                    - Played a pivotal role in the front-end development of <strong><a href="https://maticrobots.com"
+                        target="_blank">maticianrobot.com</a></strong>, resulting in a 30% increase in website traffic and a 20%
                     rise in user engagement showcasing expertise in front-end technologies and effective collaboration
                     with cross-functional teams.<br>
-                    - Designed reusable components for <a href="https://truesparrow.com"
-                        target="_blank">truesparrow.com</a>, solving complex technical challenges and driving
-                    innovation.</li>
+                    - Led web design and implemented reusable components for <strong><a href="https://truesparrow.com" target="_blank">truesparrow.com</a></strong>, the company's official website. Demonstrated
+                    initiative by identifying and solving complex technical challenges, driving innovation.<br>
+                    - Communicated and displayed leadership by collaborating across diverse teams while utilising a comprehensive technology
+                    stack.
+                </li>
                 <li><strong>Software Engineer (Intern)</strong> | Folly Systems Pvt. Ltd. | Pune, India | February 2022
                     - May 2022<br>
-                    - Spearheaded the development of <a href="https://thursday.social"
-                        target="_blank">thursday.social</a>, enhancing remote team interactions and increasing user
+                    - Spearheaded the development of <strong><a href="https://thursday.social"
+                        target="_blank">thursday.social</a></strong>, enhancing remote team interactions and increasing user
                     engagement by 20% through strategic use of AWS Chime.<br>
                     - Improved code efficiency by 40% through advanced programming and integration of RESTful services,
                     driving the project's completion under budget and ahead of schedule.</li>
@@ -223,7 +249,7 @@
                     - ADA enables natural language queries for developers and product managers, parses API
                     documentation, offers contextual responses, guides users to relevant API sections, and displays
                     example payloads.<br>
-                    <a href="https://github.com/shahhardik4599/api-doc-fe" target="_blank">GitHub</a>
+                    <strong><a href="https://github.com/shahhardik4599/api-doc-fe" target="_blank">GitHub</a></strong>
                 </li>
                 <li><strong>WhisperChain</strong> (Blockchain-Based Social Platform)<br>
                     - Blockchain-based social platform enabling users to build a chain of AI-generated images, powered
@@ -232,8 +258,8 @@
                     popular wallets like MetaMask and Coinbase for seamless blockchain interactions.<br>
                     - Developed a dynamic home page using ReactJS that aggregates and displays blockchain publications
                     and comments using Lens GraphQL APIs, enhancing user engagement.<br>
-                    <a href="https://whisperchain.xyz/" target="_blank">Website</a> | <a
-                        href="https://github.com/whisperchain" target="_blank">GitHub</a>
+                    <strong><a href="https://whisperchain.xyz/" target="_blank">Website</a> | <a
+                        href="https://github.com/whisperchain" target="_blank">GitHub</a></strong>
                 </li>
                 <li><strong>NFT or NOT</strong> (Interactive AI Art Platform)<br>
                     - Transformed classic 2000s social game into a decentralized platform WEB3 where users vote on
@@ -243,8 +269,8 @@
                     themes, with options to collect NFTs directly supporting the artists.<br>
                     - Pioneered the Hall of Fame feature, where top-voted images are showcased, driving community
                     interaction and creator recognition, attracting 25% more visits to the platform page.<br>
-                    <a href="https://nftornot.com/" target="_blank">Website</a> | <a href="https://github.com/NFTorNOT"
-                        target="_blank">GitHub</a>
+                    <strong><a href="https://nftornot.com/" target="_blank">Website</a> | <a href="https://github.com/NFTorNOT"
+                        target="_blank">GitHub</a></strong>
                 </li>
                 <li><strong>Automated Cloud Infrastructure with AWS</strong><br>
                     - Orchestrated the design and implementation of a static website hosted on S3 with AWS CLI,
@@ -258,7 +284,10 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Hardik Prakashbhai Shah. Built with care and passion.</p>
+        <div>
+            <p>&copy; 2025 Hardik Prakashbhai Shah. All rights reserved.</p>
+            <p>Thanks to GPT and Github! 😬</p>
+        </div>
     </footer>
 </body>
 
